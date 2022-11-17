@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title: add your Portfolio websites's title here -->
+  <title>Jörn-Philipp Lies | Machine Learning, Artificial Intelligence, and Product Development</title>
+
+  <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+  <meta name="keywords" content="python, kotlin, machine learning, artificial intelligence, phillies, android" />
+
+  <!-- Improve your SEO by adding a small descrption of you -->
+  <meta name="description" content="Jörn-Philipp Lies | Machine Learning, Artificial Intelligence, and Product Development" />
+
+  <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+  <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+
+  <!-- Add your primary-theme color for the value of content -->
+  <meta name="theme-color" content="#0ba1ae" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <!-- Fill content with the URL of this portfolio you'll host -->
+  <meta property="og:url" content="https://lies.io/" />
+  <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+  <meta property="og:title" content="Jörn-Philipp Lies | " />
+  <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+  <meta property="og:description" content="Made using DevFolio Template" />
+  <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+  <meta property="og:image" content="https://lies.io/assets/devfolio.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <!-- Again fill content attr with the URL of this portfolio you'll host -->
+  <meta property="twitter:url" content="https://lies.io" />
+  <!-- Recommended to use the same text used within <title> element -->
+  <meta property="twitter:title" content="Jörn-Philipp Lies | Machine Learning, Artificial Intelligence, and Product Development" />
+  <!-- short description that shows up while your portfolio is shared -->
+  <meta property="twitter:description" content="Made using DevFolio Template" />
+  <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+  <meta property="twitter:image" content="https://lies.io/assets/phil.png" />
+
+  <!-- link tags -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="./javascript/scrollreveal.min.js"></script>
+  <script defer type="text/javascript" src="./javascript/scrollveal.js"></script>
+
+  <!-- Remove Google Analytics once you have your portfolio website set-up -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"></script> -->
+  <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-122228201-4");
+  </script> -->
+  <!-- End of Google Analytics -->
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <div id="hero">
+    <section class="container">
+      <h1 class="hero-title">
+        Hi, my name is <span class="text-color-main name">Jörn-Philipp Lies</span>
+        <br />
+        I'm a machine learning engineer & product manager.
+      </h1>
+      <p class="hero-cta">
+        <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+      </p>
+    </section>
+    <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+      <div class="scroll-down"></div>
+    </a>
+  </div>
+  <!-- /END Hero Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="row about-wrapper">
+        <div class="about-wrapper__image">
+          <img class="img-fluid" src="./assets/phil.png" alt="Profile Image" />
+        </div>
+        <div class="about-wrapper__info">
+          <p class="about-wrapper__info-text">
+            Passionate machine learning engineer and product manager with 10 years of experience
+            in different fields, from polyglot coding projects to strategic leadership. In previous
+            roles valued for user-centric product design, strong communicative way and versatile
+            skill set. Proven as reliable and resourceful even in complex, high-paced environments
+            like medical AI.
+          </p>
+          <p class="about-wrapper__info-text">
+            If you're looking for someone who can help you define what kind of solution you need for your
+            specific problem, implement a prototype, or develop the MVP for you and your clients, you
+            found the right place.
+          </p>
+          <span class="about-wrapper__cta">
+            <a href="mailto:phil@lies.io" class="cta-btn cta-btn--resume">Get in touch</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /END About Section -->
+
+  <!--Projects Section-->
+  <section id="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">Projects</h2>
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Retinacorder</h3>
+            <p class="project-wrapper__text-info">
+              Main product of eye2you. A medical device to examining the retina for different diseases
+              and anatomical anomalies and to be used by non-expert medical personnel. Recording and
+              analysis are powered by an artificial intelligence which provides feedback on the quality
+              of the recorded image and the sufficiency of the covered retinal area. The recorded images
+              are stitched to a panoramic retina image by taking the anatomical structure of the retina
+              into account. The panoramic image can then be analyzed for specific diseases, anatomical
+              anomalies, or measure anatomical features like cup-to-disc ratio of the optic nerve.</p>
+            <p class="project-wrapper__text-info">
+              All computations are done on the smartphone using OpenCV, PyTorch, C++ and Kotlin. Models
+              were optimized and ran in real time (&lt;1s per model).
+            </p>
+            <div class="project-wrapper__text-info">
+              <img src="https://img.shields.io/badge/-Kotlin-7F52FF?logo=kotlin&logoColor=white&style=for-the-badge"
+                alt="Kotlin badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-Android-3DDC84?logo=android&logoColor=white&style=for-the-badge"
+                alt="Android badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=for-the-badge"
+                alt="Python badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-OpenCV-5C3EE8?logo=opencv&logoColor=white&style=for-the-badge"
+                alt="OpenCV badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-C++-00599C?logo=cplusplus&logoColor=white&style=for-the-badge"
+                alt="C++ badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-PyTorch-EE4C2C?logo=pytorch&logoColor=white&style=for-the-badge"
+                alt="PyTorch badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-Jenkins-D24939?logo=jenkins&logoColor=white&style=for-the-badge"
+                alt="Jenkins badge" class="project-wrapper__text-badge" />
+              <img
+                src="https://img.shields.io/badge/-Nextcloud-0082C9?logo=nextcloud&logoColor=white&style=for-the-badge"
+                alt="Nextcloud badge" class="project-wrapper__text-badge" />
+
+            </div>
+          </div>
+
+          <div class="project-wrapper__image">
+            <div class="thumbnail rounded">
+              <img src="./assets/retinacorder_pano.png" class="img-fluid" alt="Project Image" />
+            </div>
+            <div style="height:20px;"></div>
+            <div class="thumbnail rounded">
+              <img src="./assets/retinacorder_ai.png" class="img-fluid" alt="Project Image" />
+            </div>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Bahnalyze</h3>
+            <p class="project-wrapper__text-info">
+              Continuously monitor the German train network and create a consistent and persistent database
+              of the train delays to use for predictions.</p>
+            <p class="project-wrapper__text-info">
+              Train time tables and current delays are only available for a few minutes in the past and a few
+              hours in the future, which makes it difficult to use past data to predict which trains are notoriously
+              late and which connection will likely be missed - especially annoying if you have an important meeting.
+            </p>
+            <p class="project-wrapper__text-info">
+              Bahnalyze collects schedule and delay data every few minutes and aggregates them. Nightly, the data of
+              1164 long-distance train lines is analyzed and the statistical models are updated in Firestore. This
+              allows to provide
+              the mean and median delay at every stop, as well as the confidence intervals to.
+            </p>
+            <p class="project-wrapper__text-info">
+              Future extensions in progress are predictions how likely a connection will be missed and what the expected
+              arrival time is, given the history of the train line.
+            </p>
+            <div class="project-wrapper__text-info">
+              <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=for-the-badge"
+                alt="Python badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge"
+                alt="Pandas badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge"
+                alt="Docker badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-MariaDB-003545?logo=mariadb&logoColor=white&style=for-the-badge"
+                alt="Mariadb badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-Jupyter-F37626?logo=jupyter&logoColor=white&style=for-the-badge"
+                alt="Jupyter badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-Firebase-FFCA28?logo=firebase&logoColor=white&style=for-the-badge"
+                alt="Firebase badge" class="project-wrapper__text-badge" />
+              <img
+                src="https://img.shields.io/badge/-SciKit--Learn-F7931E?logo=scikitlearn&logoColor=white&style=for-the-badge"
+                alt="Scikit-Learn badge" class="project-wrapper__text-badge" />
+              <img
+                src="https://img.shields.io/badge/-DigitalOcean-0080FF?logo=digitalocean&logoColor=white&style=for-the-badge"
+                alt="DigitalOcean badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-Scipy-8CAAE6?logo=scipy&logoColor=white&style=for-the-badge"
+                alt="Scipy badge" class="project-wrapper__text-badge" />
+              <img
+                src="https://img.shields.io/badge/-Raspberry_Pi-A22846?logo=raspberrypi&logoColor=white&style=for-the-badge"
+                alt="Raspberry Pi badge" class="project-wrapper__text-badge" />
+
+            </div>
+          </div>
+
+          <div class="project-wrapper__image">
+            <div class="thumbnail rounded">
+              <img src="./assets/bahnalyze_ice.png" class="img-fluid" alt="Project Image" />
+            </div>
+            <div style="height:20px;"></div>
+            <div class="thumbnail rounded">
+              <img src="./assets/bahnalyze_flx.png" class="img-fluid" alt="Project Image" />
+            </div>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Train prediction</h3>
+            <p class="project-wrapper__text-info">
+              Travel assistant which provides an overview over historical train delay data per train line,
+              checks the train line the user is currently on, and provides estimates for connections.
+            </p>
+            <p class="project-wrapper__text-info">
+              Mobile application available for Android, iOS, and as website which provides access to
+              the historical train delay statistics for all 1164 long-distance train lines in Germany. If
+              you are logged into the wifi of an ICE train, it can detect the train number and show the
+              current delay compared to the expected delay.
+            </p>
+            <p class="project-wrapper__text-info">
+              You can bookmark your favorite train lines for faster access and get an overview on the
+              current status of the German train network.
+            </p>
+            <p class="project-wrapper__text-info">
+              The app is currently in closed beta and will be available in the beginning of 2023.
+            </p>
+            <div class="project-wrapper__text-info">
+              <img src="https://img.shields.io/badge/-Flutter-02569B?logo=python&logoColor=white&style=for-the-badge"
+                alt="Flutter badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-Android-3DDC84?logo=android&logoColor=white&style=for-the-badge"
+                alt="Android badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-Firebase-FFCA28?logo=firebase&logoColor=white&style=for-the-badge"
+                alt="Firebase badge" class="project-wrapper__text-badge" />
+              <img
+                src="https://img.shields.io/badge/-Google_Play-414141?logo=googleplay&logoColor=white&style=for-the-badge"
+                alt="Google Play badge" class="project-wrapper__text-badge" />
+              <img
+                src="https://img.shields.io/badge/-Google_AdMob-EA4335?logo=googleadmob&logoColor=white&style=for-the-badge"
+                alt="Google AdMob badge" class="project-wrapper__text-badge" />
+            </div>
+
+          </div>
+
+          <div class="project-wrapper__image">
+            <div class="thumbnail rounded">
+              <img src="./assets/probahnbility.png" class="img-fluid" alt="Project Image" />
+            </div>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Bahn Bingo</h3>
+            <p class="project-wrapper__text-info">
+              Multiplayer bingo game for incidents (delays, defects, and other annoyances) during train travel.
+            </p>
+            <p class="project-wrapper__text-info">
+              German trains are no longer known for punctuality and comfort, but rather countless delays,
+              defective trains, and bad communication. Especially during peak travel times, many annoyances
+              will happen. To make annoyances into fun, you can play <em>Bahn Bingo</em> with some friends.
+            </p>
+            <p class="project-wrapper__text-info">
+              Each player gets his/her own field, and progress is shared via Firebase. You can join the game using the
+              game ID provided by the organizer. The game ends once a player has Bingo.
+            </p>
+            <p class="project-wrapper__text-info">
+              The app is currently in closed beta and will be available for iOS and Android in the beginning of 2023.
+            </p>
+            <div class="project-wrapper__text-info">
+              <!-- <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                > -->
+              <img src="https://img.shields.io/badge/-Flutter-02569B?logo=python&logoColor=white&style=for-the-badge"
+                alt="Flutter badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-Android-3DDC84?logo=android&logoColor=white&style=for-the-badge"
+                alt="Android badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-Firebase-FFCA28?logo=firebase&logoColor=white&style=for-the-badge"
+                alt="Firebase badge" class="project-wrapper__text-badge" />
+            </div>
+          </div>
+
+          <div class="project-wrapper__image">
+            <div class="thumbnail rounded">
+              <img src="./assets/bahn_bingo.png" class="img-fluid" alt="Project Image" />
+            </div>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Fooracle</h3>
+            <p class="project-wrapper__text-info">
+              Football/Soccer cup game prediction based on Kaggle historical game data.</p>
+            <p class="project-wrapper__text-info">
+              Using the history of all available international games back to 1872, the <em>fooracle</em>
+              predicts how all games for an international tournament (world cup, europe cup, ...) will end.
+              The historical data is used to fit a probability distribution for the number of goals scored by
+              a specific team as home or away team. For each game, a random variable is drawn from the distribution to
+              simulate the game.
+            </p>
+            <p class="project-wrapper__text-info">
+              It supports the group stage with round robin mode where the 2 top teams are qualified for the round of
+              the last <i>n</i> teams, depending on the number of groups, with tournament mode.
+            </p>
+            <p class="project-wrapper__text-info">
+              I'm currently working on a more sophisticated statistical model, as well as a deep neural network version,
+              to
+              compare the performance of different models. Source code is on github below.
+            </p>
+            <div class="project-wrapper__text-info">
+              <!-- <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                > -->
+              <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=for-the-badge"
+                alt="Python badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge"
+                alt="Pandas badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-Jupyter-F37626?logo=jupyter&logoColor=white&style=for-the-badge"
+                alt="Jupyter badge" class="project-wrapper__text-badge" />
+              <img src="https://img.shields.io/badge/-Scipy-8CAAE6?logo=scipy&logoColor=white&style=for-the-badge"
+                alt="Scipy badge" class="project-wrapper__text-badge" />
+            </div>
+            <div class="project-wrapper__text-btns">
+              <a href="https://github.com/phillies/fooracle" class="cta-btn cta-btn--hero text-color-main">Code on
+                Github
+              </a>
+            </div>
+          </div>
+
+          <div class="project-wrapper__image">
+            <div class="thumbnail rounded">
+              <img src="./assets/fooracle.png" class="img-fluid" alt="Project Image" />
+            </div>
+          </div>
+        </article>
+        <!-- /END Project -->
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrapper">
+        <p class="contact-wrapper__text">Interested in working with me?</p>
+        <a href="mailto:phil@lies.io" class="cta-btn cta-btn--resume">Get in touch</a>
+      </div>
+    </div>
+  </section>
+  <!-- END Contact Section -->
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <a href="#hero" class="back-to-top" aria-label="go back to top">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      </a>
+      <div class="social-links">
+        <a href="https://twitter.com/philipp_lies" rel="noopener noreferrer" aria-label="twitter">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <!-- <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            <i class="fa fa-instagram"></i>
+          </a> -->
+        <!-- <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="codepen"
+          >
+            <i class="fa fa-codepen"></i>
+          </a> -->
+        <a href="https://linkedin.com/in/plies" rel="noopener noreferrer" aria-label="linkedin">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/phillies" rel="noopener noreferrer" aria-label="github">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+      <hr />
+      <p class="footer__text">
+        &copy; <span id="year"></span> - Template by
+        <a href="https://github.com/AnilSeervi" rel="noopener noreferrer">Anil Seervi</a>. <br />Made with &hearts;
+      </p>
+    </div>
+  </footer>
+  <!-- END Footer Section -->
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="./javascript/vanilla-tilt.min.js"></script>
+  <script type="text/javascript" src="./javascript/valtilt.js"></script>
+</body>
+
+</html>
