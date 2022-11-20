@@ -332,18 +332,20 @@
             <p class="project-wrapper__text-info">
               Using the history of all available international games back to 1872, the <em>fooracle</em>
               predicts how all games for an international tournament (world cup, europe cup, ...) will end.
-              The historical data is used to fit a probability distribution for the number of goals scored by
+              The historical data was used (a) to fit a probability distribution for the number of goals scored by
               a specific team as home or away team. For each game, a random variable is drawn from the distribution to
-              simulate the game.
+              simulate the game and (b) to train a multi-layer perceptron network to predict the outcome of
+              any game after 90 min.
             </p>
             <p class="project-wrapper__text-info">
               It supports the group stage with round robin mode where the 2 top teams are qualified for the round of
-              the last <i>n</i> teams, depending on the number of groups, with tournament mode.
+              the last <i>n</i> teams, depending on the number of groups, with tournament mode. While the distribution
+              based model is non-deterministic, the neural network is deterministic and will predict the same result. To
+              make it more realistic, you can sprinkle some <em>fairy dust</em> on the network, which adds some noise to
+              the prediction.
             </p>
             <p class="project-wrapper__text-info">
-              I'm currently working on a more sophisticated statistical model, as well as a deep neural network version,
-              to
-              compare the performance of different models. Source code is on github below.
+              Feel free to play around. Source code is on github below.
             </p>
             <div class="project-wrapper__text-info">
               <!-- <a
